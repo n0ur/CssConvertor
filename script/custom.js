@@ -9,25 +9,25 @@ $(document).ready(function () {
         if (newCss) {
           $('#cssAfter').text(newCss);
           $('code').each(function (i, e) {hljs.highlightBlock(e); });
-          $('#msgs').text("finished").removeClass().addClass('alert alert-success');
+          $('#msgs').text("Finished!").removeClass().addClass('alert alert-success');
         } else {
-          $('#msgs').text("There was an error").removeClass().addClass('alert alert-error');
+          $('#msgs').text("There was an error!").removeClass().addClass('alert alert-error');
         }
       });
       reader.readAsBinaryString(file);
     },
     loadExample = (function () {
       var exampleText = "p {\n\tfloat: right;\n\tpadding: 1px 2px 3px 4px;\n}";
-      $('#msgs').text("See example below").removeClass().addClass('alert alert-info');
       $('#cssBefore').text(exampleText);
       $('#cssAfter').text(CssConvertor.scanAndReplace(exampleText));
+      $('#cssMustAdd').text("body {\n\tdirection: rtl;\n}");
       $('code').each(function (i, e) {hljs.highlightBlock(e); });
     }());
 
   fileSelector.change(function () {
     var lastAddedFile = this.files[this.files.length - 1];
     if (lastAddedFile.type.match(/css/)) {
-      $('#msgs').text("loading..").removeClass().addClass('alert');
+      $('#msgs').text("Converting..").removeClass().addClass('alert');
       readFile(lastAddedFile);
     } else {
       $('#msgs').text("Please add CSS files only").removeClass().addClass('alert alert-error');

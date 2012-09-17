@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Css Convertor Example</title>
+  <title>Css Convertor</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/tomorrow-night-eighties.css">
   <link rel="stylesheet" href="css/custom.css">
@@ -15,14 +15,19 @@
   <div class="container">
     <div class="row">
       <div class="span12">
-        <h1>Css Convertor</h1>
+        <h1>CssConvertor.js</h1>
         <p class="lead">
           Pick a CSS file to convert: <input type="file" id="file_selector" />
         </p>
       </div>
     </div>
     <div class="row">
-      <div class="span6"><p id="msgs"></p></div>
+      <div class="span6">
+        <p id="msgs" class="alert alert-info alert-block">
+          CssConvertor.js converts CSS layouts (RTL-LTR)<br />
+          It's written in Javascript, this demo works entirely on client-side
+        </p>
+      </div>
     </div>
     <div class="row">
       <div class="span6">
@@ -34,6 +39,25 @@
         <pre><code id="cssAfter"></code></pre>
       </div>
     </div>
+    <div class="row">
+      <div class="span6">
+        <h4>Don't forget to add this (if it doesn't exist):</h4>
+        <pre><code id="cssMustAdd"></code></pre>
+      </div>
+    </div>
   </div>
+
+  <div class="container footer">
+    <div class="row">
+      <footer class="span12">
+        CssConvertor.js<br />
+        Project on
+        <a href="https://github.com/n0ur/CssConvertor.js">
+          <img src="images/gh.png" /> <!-- <img src="images/octocat.png" /> -->
+        </a>
+      </footer>
+    </div>
+  </div>
+
 </body>
 </html>
