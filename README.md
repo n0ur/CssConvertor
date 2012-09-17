@@ -1,4 +1,5 @@
 CssConvertor.js
 ===============
 
-Flip CSS layouts in Javascript!
+CssConvertor.js flips CSS layouts (RTL-LTR), 
+here's an [example](http://n0ur.github.com/CssConvertor.js/) of how it can be used. Enjoy!
