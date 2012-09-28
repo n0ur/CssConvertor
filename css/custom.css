@@ -1,17 +1,19 @@
 body {
-  background:url('../images/bg.png');
+  background:#eeeeee; /*url('../images/bg.png');*/
+}
+h1 {
+  text-shadow:1px 1px 0 rgba(0, 0, 0, 0.2);
 }
 h1, p.lead, h4 {
-  color:#2d2d2d;
+  color:#D91E63;
 }
 .container {
-  background-color: #e6e6e6;
-  border: 3px solid #2d2d2d;
   margin:15px auto 0 auto;
   padding:30px;
 }
 .footer {
-  background-color: #D7D7D9;
+  border: 1px solid #262324;
+  background-color: #eeeeee;
   margin:0 auto 15px auto;
   padding:10px 30px;
   text-align: center;
@@ -25,8 +27,8 @@ code {
   color:#ff7200;
 }
 .alert-info {
-  border: 2px solid #00759f;
-  color:#00759f;
+  border: 2px solid #14A697;
+  color:#14A697;
 }
 .alert-error {
   border: 2px solid #d81f2a;
